@@ -2,6 +2,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
 ul, ol {
     list-style-type: none;
     padding: 0;
@@ -37,6 +41,9 @@ height: 24;
 margin-right: 76px;
 }
 
+header{
+    background-color: teal;
+}
 .nav {
     width: 1158px;
     display: flex;
@@ -50,16 +57,27 @@ margin-right: 76px;
     margin: 0;
 }
 .header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 64px;
     display: flex;
     align-items: center;
 }
 .nav-item-link {
  padding-top: 24px;
  padding-bottom: 24px;
+ color: black;
+ transition: color 250ms ease-in-out;
 }
 
+.nav-item-link:hover, .nav-item-link:focus{
+color: #fff;
+}
+.language-item{
+    color: black;
+}
+
+.language-item:hover, .language-item:focus{
+    color: #fff;
+}
 /* Hero */
 .hero{
     background-color: teal;
@@ -83,6 +101,7 @@ font-weight: 700;
 font-size: 56px;
 line-height: 107%;
 letter-spacing: 0.02em;
+margin-bottom: 340px;
 }
 
 .button {
@@ -142,8 +161,13 @@ text-align: center;
 
 }
 .portfolio-item-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     position: absolute;
     width: 100%;
+    padding: 20px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -179,4 +203,30 @@ text-align: center;
 .prices-list{
     display: flex;
     gap: 60px;
+}
+
+.price-item-title{
+    margin-bottom: 8px;
+}
+.price-includes-list{
+    list-style-type: disc;
+}
+
+.price {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+    text-align: center;
+    background-color: teal;
+    color: #fff;
+    width: 120px;
+}
+/* footer */
+
+footer{
+    background-color: teal;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
