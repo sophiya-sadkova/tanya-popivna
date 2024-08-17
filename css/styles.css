@@ -4,14 +4,24 @@ body {
 
 ul, ol {
     list-style-type: none;
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
+
+button{
+    cursor: pointer;
+    padding: 16px 32px;
+}
+
+section{
+    padding-top: 100px;
+}
 .container {
     width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -35,7 +45,7 @@ margin-right: 76px;
 }
 .navigation {
     display: flex;
-    gap: 20px;
+    gap: 36px;
     align-items: stretch;
     margin: 0;
 }
@@ -48,4 +58,125 @@ margin-right: 76px;
 .nav-item-link {
  padding-top: 24px;
  padding-bottom: 24px;
+}
+
+/* Hero */
+.hero{
+    background-color: teal;
+    margin: 0 auto;
+    height: 600px;
+    background-image: url(../images/hero-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+}
+
+.hero-container{
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+    
+}
+.hero-title{
+font-weight: 700;
+font-size: 56px;
+line-height: 107%;
+letter-spacing: 0.02em;
+}
+
+.button {
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+background-color: teal;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+border: 0;
+border-radius: 8px;
+
+}
+/* Me */
+.me-container{
+    display: flex;
+    gap: 36px;
+}
+.me-description{
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+width: 600px;
+}
+
+.me-photo{
+    border-radius: 8px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Portfolio */
+.title{
+    margin-bottom: 72px;
+    font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-align: center;
+
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-item{
+    width: 360px;
+    height: 420px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 250ms ease-in-out;
+
+}
+.portfolio-item-text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    
+}
+
+.portfolio-image{
+    border-radius: 12px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}
+
+.portfolio-item:hover, .portfolio-item:focus{
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    transform: scaleX(110%) scaleY(110%);
+}
+
+/* Prices */
+
+.prices-section{
+    background-color: rgb(206, 243, 243);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 32px;
+
+}
+
+.prices-list{
+    display: flex;
+    gap: 60px;
 }
